@@ -1,10 +1,10 @@
 {
   "name": "functs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "merge multiple functions into one.",
   "main": "functs.js",
   "scripts": {
-    "test": "exit 1"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -16,11 +16,11 @@
     "multiple",
     "functions"
   ],
-  "author": "jones124",
+  "author": "robojones",
   "license": "SEE LICENSE IN ./LICENSE",
   "bugs": {
     "url": "https://github.com/robojones/functs/issues"
   },
   "homepage": "https://github.com/robojones/functs#readme",
-  "tonicExample": "var functs = require('functs');"
+  "tonicExample": "const functs = require('functs');"
 }
