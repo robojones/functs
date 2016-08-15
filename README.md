@@ -18,8 +18,7 @@ function f2(first, second){
 const a = functs(f1, f2);
 
 //run it
-a('in the', 'of internet!');
-//=> 'Welcome in the worlt of internet!'
+a('in the', 'of internet!'); //=> 'Welcome in the world of internet!'
 ```
 ## Getting Started
 ### Installation
