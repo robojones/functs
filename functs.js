@@ -1,10 +1,17 @@
-module.functs = functs;
+module.exports = functs;
+
+try{
+	let test = function(...a) {}
+}catch(err){
+	module.exports = require('./functs-browser');
+	return;
+}
 
 function functs(...f){
 	function functs(...args){
 		return functs.run(args);
 	}
-	functs._f = [];
+	functs._f = f;
 	functs.add = add.bind(functs);
 	functs.remove = remove.bind(functs);
 	functs.run = run.bind(functs);

@@ -1,5 +1,9 @@
 (()=>{
-	window.functs = functs;
+	if(window) {
+		window.functs = functs;
+	}else if(module && module.exports){
+		module.exports = functs;
+	}
 	
 	function functs(){
 		var f = Array.prototype.slice.call(arguments);
