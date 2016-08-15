@@ -1,14 +1,14 @@
 {
   "name": "functs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "merge multiple functions into one.",
   "main": "functs.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jones124/functs.git"
+    "url": "git+https://github.com/robojones/functs.git"
   },
   "keywords": [
     "bundle",
@@ -19,7 +19,8 @@
   "author": "jones124",
   "license": "SEE LICENSE IN ./LICENSE",
   "bugs": {
-    "url": "https://github.com/jones124/functs/issues"
+    "url": "https://github.com/robojones/functs/issues"
   },
-  "homepage": "https://github.com/jones124/functs#readme"
+  "homepage": "https://github.com/robojones/functs#readme",
+  "tonicExample": "var functs = require('functs');"
 }

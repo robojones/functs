@@ -1,4 +1,4 @@
-module.exports = functs;
+module.functs = functs;
 
 function functs(...f){
 	function functs(...args){
