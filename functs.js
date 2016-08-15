@@ -1,11 +1,12 @@
-module.exports = functs;
-
+"use strict";
 try{
 	let test = function(...a) {}
 }catch(err){
 	module.exports = require('./functs-browser');
 	return;
 }
+
+module.exports = functs;
 
 function functs(...f){
 	function functs(...args){
