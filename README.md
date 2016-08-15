@@ -13,7 +13,7 @@ Just copy the file `functs/functs-browser.js` from the `node_modules` to your pu
 ```
 const functs = require('functs');
 
-//create a new Functs-object
+//create a new functs-object
 var a = functs(errorHandler, doSomething);
 
 function errorHandler(error, result, abort) {
@@ -39,9 +39,9 @@ a('extremely critical error');
 ### Arguments
 `functions` to be included.
 ### Returns
-A new `Functs-Object` that includes all `functions` given as arguments.
-## Functs-Object
-The `Functs class` extends `function` so you can use methods like `.apply()` or `.call()`.
+A new `functs-object` that includes all `functions` given as arguments.
+## functs-Object
+The `functs-object` is a `function` (with some extra methods) so you can use methods like `.apply()` or `.call()`.
 ### .add()
 With `.add()` you can add `functions` to a `Functs-object`.
 #### Arguments
@@ -52,7 +52,7 @@ An Array of the given Arguments.
 ```
 const functs = require('functs');
 
-//create a new Functs-object
+//create a new functs-object
 var a = functs();
 
 //add functions
@@ -66,7 +66,7 @@ a.add(()=>{
 a();
 ```
 ### .remove()
-With `.remove` you can remove `functions` from a Functs-object.
+With `.remove` you can remove `functions` from a functs-object.
 #### Arguments
 An Array that includes one or more `functions`.
 (Tip: You can use the Array that `.add()` returns.)
