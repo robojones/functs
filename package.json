@@ -1,6 +1,6 @@
 {
   "name": "functs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "merge multiple functions into one.",
   "main": "functs.js",
   "scripts": {
@@ -22,5 +22,5 @@
     "url": "https://github.com/robojones/functs/issues"
   },
   "homepage": "https://github.com/robojones/functs#readme",
-  "tonicExample": "const functs = require('functs');"
+  "tonicExample": "var functs = require('functs');"
 }

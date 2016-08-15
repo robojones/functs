@@ -1,24 +1,28 @@
 (()=>{
 	window.functs = functs;
 	
-	function functs(...f){
-		function functs(...args){
+	function functs(){
+		var f = Array.prototype.slice.call(arguments);
+		function functs(){
+			var args = Array.prototype.slice.call(arguments);
 			return functs.run(args);
 		}
-		functs._f = [];
+		functs._f = f;
 		functs.add = add.bind(functs);
 		functs.remove = remove.bind(functs);
 		functs.run = run.bind(functs);
 		return functs;
 	}
-	function add(...f) {
+	function add() {
+		var f = Array.prototype.slice.call(arguments);
 		if(Array.isArray(f[0])) {
 			f = f[0];
 		}
 		this._f.push.apply(this._f, f);
 		return f;
 	}
-	function remove(...key) {
+	function remove() {
+		var key = Array.prototype.slice.call(arguments);
 		var self = this;
 	
 		if(Array.isArray(key[0])) {
