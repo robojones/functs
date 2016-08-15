@@ -45,9 +45,11 @@ The `functs-object` is a `function` (with some extra methods) so you can use met
 ### .add()
 With `.add()` you can add `functions` to a `Functs-object`.
 #### Arguments
-One or more `functions`.
+One or more `functions`
+**or**
+an `Array` of `functions`.
 #### Returns
-An Array of the given Arguments.
+An `Array` of the given arguments.
 #### Usage
 ```
 const functs = require('functs');
@@ -66,12 +68,13 @@ a.add(()=>{
 a();
 ```
 ### .remove()
-With `.remove` you can remove `functions` from a functs-object.
+With `.remove` you can remove `functions` from a `functs-object`.
 #### Arguments
-An Array that includes one or more `functions`.
-(Tip: You can use the Array that `.add()` returns.)
+One or more `functions`
 **or**
-One single `function`.
+an `Array` of `functions` 
+(Tip: You can use the `Array` that `.add()` returns).
+
 The included `functions` will be removed.
 #### Returns
 `ùndefined`
