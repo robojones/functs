@@ -1,0 +1,25 @@
+{
+  "name": "functs",
+  "version": "1.0.0",
+  "description": "merge multiple functions into one.",
+  "main": "functs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jones124/functs.git"
+  },
+  "keywords": [
+    "bundle",
+    "merge",
+    "multiple",
+    "functions"
+  ],
+  "author": "jones124",
+  "license": "SEE LICENSE IN ./LICENSE",
+  "bugs": {
+    "url": "https://github.com/jones124/functs/issues"
+  },
+  "homepage": "https://github.com/jones124/functs#readme"
+}
