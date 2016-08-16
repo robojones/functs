@@ -1,4 +1,4 @@
-(()=>{
+(function(){
 	if(window) {
 		window.functs = functs;
 	}else if(module && module.exports){
@@ -11,7 +11,9 @@
 			var args = Array.prototype.slice.call(arguments);
 			return functs.run(args);
 		}
-		functs._f = f;
+		functs._f = f.filter(function(f){
+			return typeof f === 'function';
+		});
 		functs.add = add.bind(functs);
 		functs.remove = remove.bind(functs);
 		functs.run = run.bind(functs);
@@ -22,6 +24,9 @@
 		if(Array.isArray(f[0])) {
 			f = f[0];
 		}
+		f = f.filter(function(f){
+			return typeof f === 'function';
+		});
 		this._f.push.apply(this._f, f);
 		return f;
 	}
@@ -32,15 +37,15 @@
 		if(Array.isArray(key[0])) {
 			key = key[0];
 		}
-		this.key.forEach(k=>{
-			self._f = self._f.filter(f=>{
+		this.key.forEach(function(k){
+			self._f = self._f.filter(function(f){
 				return f !== k;
 			});
 		});
 	}
 	function run(args) {
 		var end = -1;
-		var r = this._f.map((f,i)=>{
+		var r = this._f.map(function(f,i){
 			if(end === -1){
 				return f.apply(f, args.concat(abort));
 			}
