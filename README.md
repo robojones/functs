@@ -65,7 +65,7 @@ b();
 ### Returns
 A new `functs-object` that includes all `functions` given as arguments.
 ## methods
-The `functs-object` is a `function` (with some extra methods) so you can use methods like `.apply()` or `.call()`.
+The `functs-object` is a `function` (with some extra methods) so you can use methods like `.apply()` or `.call()`. The `this`-argument of the `functs-object` will be applied on all included `functions`.
 ### .add()
 With `.add()` you can add `functions` to a `Functs-object`.
 #### Arguments

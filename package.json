@@ -1,6 +1,6 @@
 {
   "name": "functs",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "merge multiple functions into one.",
   "main": "functs.js",
   "scripts": {
@@ -17,10 +17,13 @@
     "functions"
   ],
   "author": "robojones",
-  "license": "SEE LICENSE IN ./LICENSE",
+  "license": "SEE LICENSE IN LICENSE",
   "bugs": {
     "url": "https://github.com/robojones/functs/issues"
   },
   "homepage": "https://github.com/robojones/functs#readme",
+  "engines" : {
+  	"node" : ">=6.3.1"
+  },
   "tonicExample": "var functs = require('functs');"
 }

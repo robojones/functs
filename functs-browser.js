@@ -9,7 +9,7 @@
 		var f = Array.prototype.slice.call(arguments);
 		function functs(){
 			var args = Array.prototype.slice.call(arguments);
-			return functs.run(args);
+			return functs.run(this, args);
 		}
 		functs._f = f.filter(function(f){
 			return typeof f === 'function';
@@ -43,11 +43,11 @@
 			});
 		});
 	}
-	function run(args) {
+	function run(thisArg, args) {
 		var end = -1;
 		var r = this._f.map(function(f,i){
 			if(end === -1){
-				return f.apply(f, args.concat(abort));
+				return f.apply(thisArg, args.concat(abort));
 			}
 			function abort(){
 				end = i;
