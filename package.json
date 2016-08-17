@@ -25,5 +25,5 @@
   "engines" : {
   	"node" : ">=6.3.1"
   },
-  "tonicExample": "var functs = require('functs');"
+  "tonicExample": "const functs = require('functs');"
 }
