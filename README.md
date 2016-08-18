@@ -43,7 +43,7 @@ const b = functs(()=>{
 
 //the other way to add functions is the .add method
 b.add(()=>{
-  return function 3;
+  return 'function 3';
 });
 ```
 ### Example - Remove
