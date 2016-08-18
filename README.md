@@ -35,14 +35,14 @@ const a = functs();
 ### Example - Add
 ```
 //you can add functions to a functs object by passing them to the creator
-const b = functs(()=>{
+const b = functs(() => {
   return 'function 1';
 }, ()=>{
   return 'function 2';
 });
 
 //the other way to add functions is the .add method
-b.add(()=>{
+b.add(() => {
   return 'function 3';
 });
 ```
