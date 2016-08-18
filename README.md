@@ -1,7 +1,7 @@
 # functs - merging functions
 ## Introduction
 `functs` is a lightweight is a npm module for merging multiple functions into one.
-You can use this e.g. for callbacks, event-handlers,...
+You can use this e.g. for callbacks, event-handlers, etc.
 ### Example - Demo
 ```
 const functs = require('functs');
@@ -37,7 +37,7 @@ const a = functs();
 //you can add functions to a functs object by passing them to the creator
 const b = functs(() => {
   return 'function 1';
-}, ()=>{
+}, () => {
   return 'function 2';
 });
 
@@ -49,7 +49,7 @@ b.add(() => {
 ### Example - Remove
 ```
 //to remove a function you need to pass the function itself to the .remove method
-const key = b.add(()=>{
+const key = b.add(() => {
   return function 4;
 });
 b.remove(key);
