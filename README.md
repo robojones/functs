@@ -1,6 +1,6 @@
 # functs - merging functions
 ## Introduction
-`functs` is a lightweight is a npm module for merging multiple functions into one.
+`functs` is a lightweight npm module for merging multiple functions into one.
 You can use this e.g. for callbacks, event-handlers, etc.
 ### Example - Demo
 ```
