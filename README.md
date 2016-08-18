@@ -82,9 +82,9 @@ const functs = require('functs');
 var a = functs();
 
 //add functions
-a.add(()=>{
+a.add(() => {
   console.log('hi');
-}, ()=>{
+}, () => {
   console.log('foo');
 });
 
