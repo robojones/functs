@@ -120,7 +120,7 @@ var a = functs(errorHandler, doSomething);
 function errorHandler(error, result, abort) {
   if(error) {
     console.log('error:', error);
-    
+
     //do not continue if an error occurs
     abort();
   }
