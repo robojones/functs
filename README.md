@@ -1,7 +1,7 @@
 # functs - merging functions
 ## Introduction
 `functs` is a lightweight is a npm module for merging multiple functions into one.
-You can use this e.g. for callbacks, event-handlers,...
+You can use this e.g. for callbacks, event-handlers, etc.
 ### Example - Demo
 ```
 const functs = require('functs');
@@ -35,22 +35,22 @@ const a = functs();
 ### Example - Add
 ```
 //you can add functions to a functs object by passing them to the creator
-const b = functs(()=>{
+const b = functs(() => {
   return 'function 1';
-}, ()=>{
+}, () => {
   return 'function 2';
 });
 
 //the other way to add functions is the .add method
-b.add(()=>{
-  return function 3;
+b.add(() => {
+  return 'function 3';
 });
 ```
 ### Example - Remove
 ```
 //to remove a function you need to pass the function itself to the .remove method
-const key = b.add(()=>{
-  return function 4;
+const key = b.add(() => {
+  return 'function 4';
 });
 b.remove(key);
 ```
@@ -82,9 +82,9 @@ const functs = require('functs');
 var a = functs();
 
 //add functions
-a.add(()=>{
+a.add(() => {
   console.log('hi');
-}, ()=>{
+}, () => {
   console.log('foo');
 });
 
@@ -96,7 +96,7 @@ With `.remove` you can remove `functions` from a `functs-object`.
 #### Arguments
 One or more `functions`
 **or**
-an `Array` of `functions` 
+an `Array` of `functions`
 (Tip: You can use the `Array` that `.add()` returns).
 
 The included `functions` will be removed.
@@ -104,7 +104,7 @@ The included `functions` will be removed.
 `ùndefined`
 
 ## abort()
-All `functions` in a `functs-object` can recieve this method as last argument. 
+All `functions` in a `functs-object` can recieve this method as last argument.
 It gets appended to the arguments given when executing the `functs-object`.
 ### Arguments
 none
@@ -120,7 +120,7 @@ var a = functs(errorHandler, doSomething);
 function errorHandler(error, result, abort) {
   if(error) {
     console.log('error:', error);
-    
+
     //do not continue if an error occurs
     abort();
   }
