@@ -50,7 +50,7 @@ b.add(() => {
 ```
 //to remove a function you need to pass the function itself to the .remove method
 const key = b.add(() => {
-  return function 4;
+  return 'function 4';
 });
 b.remove(key);
 ```
