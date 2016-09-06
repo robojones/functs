@@ -49,10 +49,6 @@ function add(...f) {
 function remove(...key) {
     const self = this;
 	
-	if(!key.length) {
-		this._f = [];
-		return;
-	}
     if(Array.isArray(key[0])) {
         key = key[0];
     }
