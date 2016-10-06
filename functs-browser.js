@@ -4,13 +4,18 @@
 	}else if(module && module.exports){
 		module.exports = functs;
 	}
-	
+
 	function functs(){
 		var f = Array.prototype.slice.call(arguments);
 		function functs(){
 			var args = Array.prototype.slice.call(arguments);
 			return functs.run(this, args);
 		}
+
+		if(Array.isArray(f[0])) {
+            f = f[0];
+		}
+
 		functs._f = f.filter(function(f){
 			return typeof f === 'function';
 		});
@@ -33,11 +38,11 @@
 	function remove() {
 		var key = Array.prototype.slice.call(arguments);
 		var self = this;
-	
+
 		if(Array.isArray(key[0])) {
 			key = key[0];
 		}
-		this.key.forEach(function(k){
+		key.forEach(function(k){
 			self._f = self._f.filter(function(f){
 				return f !== k;
 			});
