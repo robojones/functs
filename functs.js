@@ -15,6 +15,11 @@ function functs(...f) {
     function functs(...args) {
         return functs.run(this, args);
     }
+
+    if(Array.isArray(f[0])) {
+        f = f[0];
+    }
+    
     functs._f = f.filter((f) => {
         return typeof f === 'function';
     });
@@ -52,7 +57,7 @@ function remove(...key) {
     if(Array.isArray(key[0])) {
         key = key[0];
     }
-    this.key.forEach(k => {
+    key.forEach(k => {
         self._f = self._f.filter(f => {
             return f !== k;
         });
