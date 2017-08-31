@@ -1,6 +1,6 @@
 {
   "name": "functs",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "Merge multiple functions into one.",
   "main": "functs.js",
   "scripts": {
