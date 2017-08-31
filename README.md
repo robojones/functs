@@ -1,4 +1,12 @@
-# functs - merging functions
+# functs
+Merge multiple functions into one.
+
+[![bitHound Code](https://www.bithound.io/github/robojones/functs/badges/code.svg)](https://www.bithound.io/github/robojones/functs)
+[![bitHound Overall Score](https://www.bithound.io/github/robojones/functs/badges/score.svg)](https://www.bithound.io/github/robojones/functs)
+[![bitHound Dependencies](https://www.bithound.io/github/robojones/functs/badges/dependencies.svg)](https://www.bithound.io/github/robojones/functs/master/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/github/robojones/functs/badges/devDependencies.svg)](https://www.bithound.io/github/robojones/functs/master/dependencies/npm)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Introduction
 `functs` is a lightweight npm module for merging multiple functions into one.
 You can use this e.g. for callbacks, event-handlers, etc.

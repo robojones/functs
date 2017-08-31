@@ -1,7 +1,7 @@
 {
   "name": "functs",
   "version": "1.1.7",
-  "description": "merge multiple functions into one.",
+  "description": "Merge multiple functions into one.",
   "main": "functs.js",
   "scripts": {
     "test": "echo \"no test specified\" && exit 0"
@@ -17,13 +17,13 @@
     "functions"
   ],
   "author": "robojones",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/robojones/functs/issues"
   },
   "homepage": "https://github.com/robojones/functs#readme",
-  "engines" : {
-  	"node" : ">=6.3.1"
+  "engines": {
+    "node": ">=6.3.1"
   },
   "tonicExample": "const functs = require('functs');"
 }
