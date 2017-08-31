@@ -8,10 +8,13 @@ Merge multiple functions into one.
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Introduction
+
 `functs` is a lightweight npm module for merging multiple functions into one.
 You can use this e.g. for callbacks, event-handlers, etc.
+
 ### Example - Demo
-```
+
+```javascript
 const functs = require('functs');
 
 //create some functions
@@ -28,20 +31,29 @@ const a = functs(f1, f2);
 //run it
 a('in the', 'of internet!'); //=> 'Welcome in the world of internet!'
 ```
+
 ## Getting Started
+
 ### Installation
+
 ```npm install functs```
+
 ### Browser Version
+
 Since functs is using ES6 you may not use it in the Browser because of compatibility.
 I have added a version with better compatibility to the module.
 Just copy the file `functs/functs-browser.js` from the `node_modules` to your public directory.
+
 ### Example - Create
-```
+
+```javascript
 const functs = require('functs');
 const a = functs();
 ```
+
 ### Example - Add
-```
+
+```javascript
 //you can add functions to a functs object by passing them to the creator
 const b = functs(() => {
   return 'function 1';
@@ -54,36 +66,55 @@ b.add(() => {
   return 'function 3';
 });
 ```
+
 ### Example - Remove
-```
+
+```javascript
 //to remove a function you need to pass the function itself to the .remove method
 const key = b.add(() => {
   return 'function 4';
 });
 b.remove(key);
 ```
+
 ### Example - Execute
-```
+
+```javascript
 //since the functs-object is a function the execution is simple: just run it.
 b();
 ```
+
 ## functs()
+
 ### Arguments
+
 `functions` to be included.
+
 ### Returns
+
 A new `functs-object` that includes all `functions` given as arguments.
+
 ## Methods
+
 The `functs-object` is a `function` (with some extra methods) so you can use methods like `.apply()` or `.call()`. The `this`-argument of the `functs-object` will be applied on all included `functions`.
+
 ### .add()
+
 With `.add()` you can add `functions` to a `Functs-object`.
+
 #### Arguments
+
 One or more `functions`
 **or**
 an `Array` of `functions`.
+
 #### Returns
+
 An `Array` of the given arguments.
+
 #### Usage
-```
+
+```javascript
 const functs = require('functs');
 
 //create a new functs-object
@@ -99,27 +130,40 @@ a.add(() => {
 //run the added functions
 a();
 ```
+
 ### .remove()
+
 With `.remove` you can remove `functions` from a `functs-object`.
+
 #### Arguments
+
 One or more `functions`
 **or**
 an `Array` of `functions` 
 (Tip: You can use the `Array` that `.add()` returns).
 
 The included `functions` will be removed.
+
 #### Returns
 `ùndefined`
 
 ## abort()
+
 All `functions` in a `functs-object` can recieve this method as last argument. 
 It gets appended to the arguments given when executing the `functs-object`.
+
 ### Arguments
+
 none
+
 ### Returns
+
 `undefined`
+
 ### Example - Error Handling
-```
+
+```javascript
+
 const functs = require('functs');
 
 //create a new functs-object
